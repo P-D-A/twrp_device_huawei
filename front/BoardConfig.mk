@@ -1,3 +1,8 @@
+TARGET_OTA_ASSERT_DEVICE := front,U9500
+
+TARGET_GLOBAL_CFLAGS += -mfpu=neon -mfloat-abi=softfp
+TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
+TARGET_USES_ION := true
 
 # Target arch settings
 TARGET_ARCH := arm
@@ -12,6 +17,7 @@ TARGET_ARCH_VARIANT_CPU := cortex-a9
 TARGET_ARCH_VARIANT_FPU := neon
 TARGET_CPU_SMP := true
 ARCH_ARM_HAVE_TLS_REGISTER := true
+TARGET_CORTEX_CACHE_LINE_32 := true
 
 # Kernel/Ramdisk
 BOARD_KERNEL_CMDLINE := console=ttyGS2,115200n8 mem=1G vmalloc=768M vram=16M omapfb.vram=0:8M omap_wdt.timer_margin=30 mmcparts=mmcblk0:p15(splash) androidboot.hardware=front
@@ -27,7 +33,8 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 536870912
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 6731857920
 BOARD_FLASH_BLOCK_SIZE := 4096
 
-#HAVE_SELINUX := false
+HAVE_SELINUX := false
+TWHAVE_SELINUX := false
 
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/class/android_usb/f_mass_storage/lun/file"
 
@@ -36,7 +43,6 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 TARGET_PREBUILT_RECOVERY_KERNEL := device/huawei/front/kernel
 TARGET_RECOVERY_INITRC := device/huawei/front/init.recovery.front.rc
 TARGET_RECOVERY_FSTAB = device/huawei/front/recovery.fstab
-RECOVERY_FSTAB_VERSION := 2
 BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_HAS_NO_MISC_PARTITION := true
 DEVICE_RESOLUTION := 720x1280
@@ -49,13 +55,10 @@ TW_EXTERNAL_STORAGE_MOUNT_POINT := "sdcardExt"
 TW_DEFAULT_EXTERNAL_STORAGE := true
 TW_FLASH_FROM_STORAGE := true
 TW_HAS_DOWNLOAD_MODE := true
-SP1_NAME := "cust"
-SP1_BACKUP_METHOD := files
-SP1_MOUNTABLE := 1
 TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
 TW_MAX_BRIGHTNESS := 250
 TW_BRIGHTNESS_PATH := /sys/devices/omapdss/display0/backlight/lcd/brightness
 TW_CUSTOM_BATTERY_PATH := /sys/class/power_supply/Battery
 TW_SDEXT_NO_EXT4 := true
 TW_NO_SCREEN_TIMEOUT := true
-TW_HAS_DOWNLOAD_MODE := false
+TW_HAS_DOWNLOAD_MODE := true

@@ -1,24 +1,7 @@
-$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
-# The gps config appropriate for this device
-$(call inherit-product, device/common/gps/gps_us_supl.mk)
-
-$(call inherit-product, hardware/ti/omap4xxx/omap4.mk)
-
-$(call inherit-product, frameworks/native/build/phone-hdpi-512-dalvik-heap.mk)
-
-LOCAL_PATH := device/huawei/viva
-ifeq ($(TARGET_PREBUILT_KERNEL),)
-	LOCAL_KERNEL := $(LOCAL_PATH)/kernel
-else
-	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
-endif
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_KERNEL):kernel
-
+# Necessary to mount a PC
 $(call inherit-product, build/target/product/full.mk)
 
+PRODUCT_CHARACTERISTICS      := default
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
-PRODUCT_AAPT_CONFIG          := hdpi
-PRODUCT_AAPT_PREF_CONFIG     := hdpi
+PRODUCT_LOCALES              := en_US

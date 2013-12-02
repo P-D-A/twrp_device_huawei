@@ -9,5 +9,5 @@
 /recovery    emmc   /dev/block/platform/omap/omap_hsmmc.1/by-name/recovery
 /bootloader  emmc   /dev/block/platform/omap/omap_hsmmc.1/by-name/bootloader
 /xloader     emmc   /dev/block/platform/omap/omap_hsmmc.1/by-name/xloader
-/cust        ext4   /dev/block/platform/omap/omap_hsmmc.1/by-name/cust        flags=display="cust";backup=1;wipeingui
+/cust        ext4   /dev/block/platform/omap/omap_hsmmc.1/by-name/cust        flags=display="cust";backup=1;wipeingui;usermrf
 /usb-ext     auto   /devices/platform/omap/musb-omap2430/musb-hdrc/usb1       flags=display="OTG device";storage;removable

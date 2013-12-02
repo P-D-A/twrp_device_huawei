@@ -1,9 +1,3 @@
-## Specify phone tech before including full_phone
-$(call inherit-product, vendor/cm/config/gsm.mk)
-
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
-
 # Inherit device configuration
 $(call inherit-product, device/huawei/front/device_front.mk)
 
@@ -14,5 +8,5 @@ PRODUCT_RELEASE_NAME := front
 PRODUCT_DEVICE := front
 PRODUCT_NAME := cm_front
 PRODUCT_BRAND := Huawei
-PRODUCT_MODEL := front
+PRODUCT_MODEL := U9500
 PRODUCT_MANUFACTURER := Huawei
