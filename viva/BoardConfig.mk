@@ -61,4 +61,8 @@ TW_BRIGHTNESS_PATH := /sys/devices/omapdss/display0/backlight/lcd/brightness
 TW_CUSTOM_BATTERY_PATH := /sys/class/power_supply/Battery
 TW_SDEXT_NO_EXT4 := true
 TW_NO_SCREEN_TIMEOUT := true
+TW_NO_SCREEN_BLANK := true
 TW_HAS_DOWNLOAD_MODE := true
+
+TW_FORCE_CPUINFO_FOR_DEVICE_ID := false
+TW_HAS_DUAL_STORAGE :=true

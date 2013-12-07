@@ -36,6 +36,7 @@ BOARD_FLASH_BLOCK_SIZE := 4096
 HAVE_SELINUX := false
 TWHAVE_SELINUX := false
 
+# USB Mounting
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/class/android_usb/f_mass_storage/lun/file"
 
 # Recovery TWRP
@@ -61,4 +62,8 @@ TW_BRIGHTNESS_PATH := /sys/devices/omapdss/display0/backlight/lcd/brightness
 TW_CUSTOM_BATTERY_PATH := /sys/class/power_supply/Battery
 TW_SDEXT_NO_EXT4 := true
 TW_NO_SCREEN_TIMEOUT := true
+TW_NO_SCREEN_BLANK := true
 TW_HAS_DOWNLOAD_MODE := true
+
+TW_FORCE_CPUINFO_FOR_DEVICE_ID := false
+TW_HAS_DUAL_STORAGE :=true
