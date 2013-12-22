@@ -40,12 +40,12 @@ TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/class/android_usb/f_mass_storage/lun/fi
 
 # Recovery TWRP
 BOARD_HAS_NO_SELECT_BUTTON := true
-TARGET_PREBUILT_RECOVERY_KERNEL := device/huawei/viva/kernel
-TARGET_RECOVERY_INITRC := device/huawei/viva/init.recovery.viva.rc
-TARGET_RECOVERY_FSTAB = device/huawei/viva/recovery.fstab
+TARGET_PREBUILT_RECOVERY_KERNEL := device/huawei/front/kernel
+TARGET_RECOVERY_INITRC := device/huawei/front/init.recovery.front.rc
+TARGET_RECOVERY_FSTAB = device/huawei/front/recovery.fstab
 BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_HAS_NO_MISC_PARTITION := true
-DEVICE_RESOLUTION := 540x960
+DEVICE_RESOLUTION := 720x1280
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 RECOVERY_SDCARD_ON_DATA := true
 TW_INTERNAL_STORAGE_PATH := "/sdcard"
@@ -53,9 +53,11 @@ TW_INTERNAL_STORAGE_MOUNT_POINT := "sdcard"
 TW_EXTERNAL_STORAGE_PATH := "/sdcardExt"
 TW_EXTERNAL_STORAGE_MOUNT_POINT := "sdcardExt"
 TW_DEFAULT_EXTERNAL_STORAGE := true
+TW_HAS_DUAL_STORAGE :=true
 TW_FLASH_FROM_STORAGE := true
 TW_HAS_DOWNLOAD_MODE := true
 TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
+TW_FORCE_CPUINFO_FOR_DEVICE_ID := true
 TW_MAX_BRIGHTNESS := 250
 TW_BRIGHTNESS_PATH := /sys/devices/omapdss/display0/backlight/lcd/brightness
 TW_CUSTOM_BATTERY_PATH := /sys/class/power_supply/Battery
@@ -63,6 +65,3 @@ TW_SDEXT_NO_EXT4 := true
 TW_NO_SCREEN_TIMEOUT := true
 TW_NO_SCREEN_BLANK := true
 TW_HAS_DOWNLOAD_MODE := true
-
-TW_FORCE_CPUINFO_FOR_DEVICE_ID := false
-TW_HAS_DUAL_STORAGE :=true
