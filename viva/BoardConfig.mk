@@ -19,6 +19,8 @@ TARGET_CPU_SMP := true
 ARCH_ARM_HAVE_TLS_REGISTER := true
 TARGET_CORTEX_CACHE_LINE_32 := true
 
+TARGET_BOOTLOADER_BOARD_NAME := viva
+
 # Kernel/Ramdisk
 BOARD_KERNEL_CMDLINE := console=ttyGS2,115200n8 mem=1G vmalloc=768M vram=16M omapfb.vram=0:8M omap_wdt.timer_margin=30 mmcparts=mmcblk0:p15(splash) androidboot.hardware=viva
 BOARD_KERNEL_BASE := 0x80000000
