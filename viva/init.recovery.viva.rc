@@ -7,7 +7,7 @@ on init
     export LD_LIBRARY_PATH .:/sbin
     export ANDROID_ROOT /system
     export ANDROID_DATA /data
-    export EXTERNAL_STORAGE /sdcardExt
+    export EXTERNAL_STORAGE /extSdCard
 
     symlink /system/etc /etc
     symlink /sbin/busybox /sbin/sh
@@ -20,7 +20,7 @@ on init
     mkdir /data
     mkdir /cache
     mkdir /sdcard
-    mkdir /sdcardExt
+    mkdir /extSdCard
     mkdir /usb-ext
     mkdir /recovery
 
@@ -28,13 +28,14 @@ on init
     chown root shell /tmp
     chmod 0775 /tmp
 
+# Always start adbd on userdebug and eng builds
     write /sys/class/android_usb/android0/enable 0
-    write /sys/class/android_usb/android0/idVendor 18D1
-    write /sys/class/android_usb/android0/idProduct D001
-    write /sys/class/android_usb/android0/functions adb
-    write /sys/class/android_usb/android0/iManufacturer ${ro.product.manufacturer}
-    write /sys/class/android_usb/android0/iProduct ${ro.product.model}
-    write /sys/class/android_usb/android0/iSerial ${ro.serialno}
+    write /sys/class/android_usb/android0/idVendor 12d1
+    write /sys/class/android_usb/android0/idProduct 1038
+    write /sys/class/android_usb/android0/iSerial $ro.serialno
+    write /sys/class/android_usb/f_mass_storage/luns sdcard
+    write /sys/class/android_usb/f_mass_storage/lun/file none
+    write /sys/class/android_usb/android0/functions mass_storage,adb
 
 on boot
     ifup lo
