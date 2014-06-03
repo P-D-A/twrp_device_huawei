@@ -9,11 +9,6 @@ on init
     export ANDROID_DATA /data
     export EXTERNAL_STORAGE /extSdCard
 
-    symlink /system/etc /etc
-    symlink /sbin/busybox /sbin/sh
-
-    chmod 0755 /sbin/busybox
-
     mkdir /boot
     mkdir /system
     mkdir /cust
@@ -25,6 +20,7 @@ on init
     mkdir /recovery
 
     mount /tmp /tmp tmpfs
+
     chown root shell /tmp
     chmod 0775 /tmp
 

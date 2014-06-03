@@ -1,6 +1,6 @@
 # mount point fstype device
 
-/sdcardExt   vfat   /dev/block/mmcblk1p1   /dev/block/mmcblk1                 flags=display="Micro SDcard";storage;wipeingui;removable
+/extSdCard   vfat   /dev/block/mmcblk1p1   /dev/block/mmcblk1                 flags=display="Micro SDcard";storage;wipeingui;removable
 /system      ext4   /dev/block/platform/omap/omap_hsmmc.1/by-name/system
 /cache       ext4   /dev/block/platform/omap/omap_hsmmc.1/by-name/cache
 /data        ext4   /dev/block/platform/omap/omap_hsmmc.1/by-name/userdata
