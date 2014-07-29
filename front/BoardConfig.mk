@@ -69,3 +69,5 @@ TW_NO_SCREEN_TIMEOUT := true
 TW_NO_SCREEN_BLANK := true
 # TWRP f2fs support
 TARGET_USERIMAGES_USE_F2FS := true
+# TWRP crypto support
+TW_INCLUDE_JB_CRYPTO := true
