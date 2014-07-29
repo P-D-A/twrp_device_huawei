@@ -4,5 +4,3 @@
 
 # MASS STORAGE
 ro.vold.umsdirtyratio=50
-
-ro.sf.lcd_density=290
