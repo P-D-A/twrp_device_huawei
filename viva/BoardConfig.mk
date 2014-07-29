@@ -67,3 +67,5 @@ TW_CUSTOM_BATTERY_PATH := /sys/class/power_supply/Battery
 TW_SDEXT_NO_EXT4 := true
 TW_NO_SCREEN_TIMEOUT := true
 TW_NO_SCREEN_BLANK := true
+# TWRP f2fs support
+TARGET_USERIMAGES_USE_F2FS := true
