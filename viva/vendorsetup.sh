@@ -21,3 +21,4 @@
 # function: add_lunch_combo generic-eng
 
 add_lunch_combo cm_viva-eng
+sh device/huawei/viva/patches/applypatch.sh
