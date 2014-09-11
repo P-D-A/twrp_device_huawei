@@ -22,7 +22,7 @@ TARGET_CORTEX_CACHE_LINE_32 := true
 TARGET_BOOTLOADER_BOARD_NAME := viva
 
 # Kernel/Ramdisk
-BOARD_KERNEL_CMDLINE := console=ttyGS2,115200n8 mem=1G vmalloc=768M vram=16M omapfb.vram=0:8M omap_wdt.timer_margin=30 mmcparts=mmcblk0:p15(splash) androidboot.hardware=front androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE := console=ttyGS2,115200n8 mem=1G vmalloc=768M vram=16M omapfb.vram=0:8M omap_wdt.timer_margin=30 mmcparts=mmcblk0:p15(splash) androidboot.hardware=viva androidboot.selinux=permissive
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_PAGESIZE := 2048
 TARGET_PREBUILT_KERNEL := device/huawei/viva/kernel
@@ -44,7 +44,6 @@ TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/class/android_usb/f_mass_storage/lun/fi
 # Recovery TWRP
 BOARD_HAS_NO_SELECT_BUTTON := true
 TARGET_PREBUILT_RECOVERY_KERNEL := device/huawei/viva/kernel
-TARGET_RECOVERY_INITRC := device/huawei/viva/init.recovery.viva.rc
 TARGET_RECOVERY_FSTAB = device/huawei/viva/recovery.fstab
 BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_HAS_NO_MISC_PARTITION := true

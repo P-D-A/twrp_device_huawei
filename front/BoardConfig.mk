@@ -44,7 +44,6 @@ TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/class/android_usb/f_mass_storage/lun/fi
 # Recovery TWRP
 BOARD_HAS_NO_SELECT_BUTTON := true
 TARGET_PREBUILT_RECOVERY_KERNEL := device/huawei/front/kernel
-TARGET_RECOVERY_INITRC := device/huawei/front/init.recovery.front.rc
 TARGET_RECOVERY_FSTAB = device/huawei/front/recovery.fstab
 BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_HAS_NO_MISC_PARTITION := true

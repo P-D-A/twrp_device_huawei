@@ -4,7 +4,8 @@ $(call inherit-product, build/target/product/full.mk)
 
 # Ramdisk
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/fstab.front:root/fstab.front
+    $(LOCAL_PATH)/fstab.front:root/fstab.front \
+    $(LOCAL_PATH)/init.recovery.front.rc:root/init.recovery.front.rc
 
 # f2fs utilities
 PRODUCT_PACKAGES += \
