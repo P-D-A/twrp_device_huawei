@@ -10,7 +10,11 @@ PRODUCT_COPY_FILES += \
 # f2fs utilities
 PRODUCT_PACKAGES += \
     fs_mgr \
-    resize2fs
+    resize2fs \
+    mkfs.f2fs
+
+PRODUCT_PACKAGES += \
+    busybox
 
 PRODUCT_CHARACTERISTICS      := default
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
