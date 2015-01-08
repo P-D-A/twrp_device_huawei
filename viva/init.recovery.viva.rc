@@ -1,7 +1,0 @@
-on init
-    export EXTERNAL_STORAGE /extSdCard
-
-    mkdir /cust
-    mkdir /sdcard
-    mkdir /extSdCard
-    mkdir /usb-ext

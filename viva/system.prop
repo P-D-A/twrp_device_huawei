@@ -1,6 +1,0 @@
-#
-# system.prop for viva
-#
-
-# MASS STORAGE
-ro.vold.umsdirtyratio=50

@@ -28,18 +28,19 @@ BOARD_KERNEL_PAGESIZE := 2048
 TARGET_PREBUILT_KERNEL := device/huawei/front/kernel
 
 # fix this up by examining /proc/mtd on a running device
-#TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_BOOTIMAGE_PARTITION_SIZE := 8388608
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 8388608
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1342177280
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 2302672896
 BOARD_FLASH_BLOCK_SIZE := 4096
+# TWRP f2fs support
+TARGET_USERIMAGES_USE_F2FS := true
 
-HAVE_SELINUX := false
-TWHAVE_SELINUX := false
+#HAVE_SELINUX := false
+#TWHAVE_SELINUX := false
 
 # USB Mounting
-TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/class/android_usb/f_mass_storage/lun/file"
+TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/class/android_usb/f_mass_storage/lun/file
 
 # Recovery TWRP
 BOARD_HAS_NO_SELECT_BUTTON := true
@@ -58,7 +59,7 @@ TW_DEFAULT_EXTERNAL_STORAGE := true
 TW_HAS_DUAL_STORAGE :=true
 TW_FLASH_FROM_STORAGE := true
 TW_HAS_DOWNLOAD_MODE := false
-TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
+TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := false
 TW_FORCE_CPUINFO_FOR_DEVICE_ID := false
 TW_MAX_BRIGHTNESS := 250
 TW_BRIGHTNESS_PATH := /sys/devices/omapdss/display0/backlight/lcd/brightness
@@ -66,7 +67,7 @@ TW_CUSTOM_BATTERY_PATH := /sys/class/power_supply/Battery
 TW_SDEXT_NO_EXT4 := true
 TW_NO_SCREEN_TIMEOUT := true
 TW_NO_SCREEN_BLANK := true
-# TWRP f2fs support
-TARGET_USERIMAGES_USE_F2FS := true
 # TWRP crypto support
+TW_INCLUDE_CRYPTO := true
 TW_INCLUDE_JB_CRYPTO := true
+TW_NO_CPU_TEMP := true
