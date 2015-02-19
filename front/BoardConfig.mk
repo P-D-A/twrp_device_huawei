@@ -66,7 +66,7 @@ TW_CUSTOM_BATTERY_PATH := /sys/class/power_supply/Battery
 TW_SDEXT_NO_EXT4 := true
 TW_NO_SCREEN_TIMEOUT := true
 TW_NO_SCREEN_BLANK := true
+TW_NO_CPU_TEMP := true
 # TWRP crypto support
 TW_INCLUDE_CRYPTO := true
 TW_INCLUDE_JB_CRYPTO := true
-TW_NO_CPU_TEMP := true

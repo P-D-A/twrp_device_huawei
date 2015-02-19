@@ -21,5 +21,3 @@ PRODUCT_LOCALES              := en_US
 
 PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
-
-#$(call inherit-product, hardware/ti/omap4xxx/omap4.mk)
