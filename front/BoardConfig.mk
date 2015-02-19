@@ -36,11 +36,10 @@ BOARD_FLASH_BLOCK_SIZE := 4096
 # TWRP f2fs support
 TARGET_USERIMAGES_USE_F2FS := true
 
-#HAVE_SELINUX := false
-#TWHAVE_SELINUX := false
-
 # USB Mounting
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/class/android_usb/f_mass_storage/lun/file
+
+BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_15x24.h\"
 
 # Recovery TWRP
 BOARD_HAS_NO_SELECT_BUTTON := true
