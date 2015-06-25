@@ -64,9 +64,6 @@ TW_MAX_BRIGHTNESS := 250
 TW_BRIGHTNESS_PATH := /sys/devices/omapdss/display0/backlight/lcd/brightness
 TW_CUSTOM_BATTERY_PATH := /sys/class/power_supply/Battery
 TW_SDEXT_NO_EXT4 := true
-TW_NO_SCREEN_TIMEOUT := true
-TW_NO_SCREEN_BLANK := true
-TW_NO_CPU_TEMP := true
 # TWRP crypto support
 TW_INCLUDE_CRYPTO := true
 TW_INCLUDE_JB_CRYPTO := true
