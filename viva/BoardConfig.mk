@@ -1,9 +1,5 @@
 TARGET_OTA_ASSERT_DEVICE := viva,U9200
 
-TARGET_GLOBAL_CFLAGS += -mfpu=neon -mfloat-abi=softfp
-TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
-TARGET_USES_ION := true
-
 # Target arch settings
 TARGET_ARCH := arm
 TARGET_NO_BOOTLOADER := true
@@ -16,9 +12,7 @@ TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_ARCH_VARIANT_CPU := cortex-a9
 TARGET_ARCH_VARIANT_FPU := neon
 TARGET_CPU_SMP := true
-ARCH_ARM_HAVE_TLS_REGISTER := true
-TARGET_CORTEX_CACHE_LINE_32 := true
-
+TARGET_USES_ION := true
 TARGET_BOOTLOADER_BOARD_NAME := viva
 
 # Kernel/Ramdisk
@@ -59,7 +53,7 @@ TW_HAS_DOWNLOAD_MODE := false
 TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := false
 TW_FORCE_CPUINFO_FOR_DEVICE_ID := false
 TW_MAX_BRIGHTNESS := 250
-TW_BRIGHTNESS_PATH := /sys/devices/omapdss/display0/backlight/lcd/brightness
+TW_BRIGHTNESS_PATH := /sys/class/backlight/lcd/brightness
 TW_CUSTOM_BATTERY_PATH := /sys/class/power_supply/Battery
 TW_SDEXT_NO_EXT4 := true
 # TWRP crypto support
