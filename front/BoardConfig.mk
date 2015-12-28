@@ -63,3 +63,5 @@ TW_SDEXT_NO_EXT4 := true
 # TWRP crypto support
 TW_INCLUDE_CRYPTO := true
 TW_INCLUDE_JB_CRYPTO := true
+
+TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/platform/omap/pcb_temp_sensor.0/temp1_input
