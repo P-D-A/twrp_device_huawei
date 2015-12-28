@@ -67,3 +67,6 @@ TW_INCLUDE_JB_CRYPTO := true
 TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/platform/omap/pcb_temp_sensor.0/temp1_input
 
 TW_SCREEN_BLANK_ON_BOOT := true
+
+TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
+
