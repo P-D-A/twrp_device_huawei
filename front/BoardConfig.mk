@@ -14,11 +14,13 @@ TARGET_ARCH_VARIANT_FPU := neon
 TARGET_CPU_SMP := true
 TARGET_BOOTLOADER_BOARD_NAME := front
 
-# Kernel/Ramdisk
-BOARD_KERNEL_CMDLINE := console=ttyGS2,115200n8 mem=1G vmalloc=768M vram=16M omapfb.vram=0:8M omap_wdt.timer_margin=30 mmcparts=mmcblk0:p15(splash) androidboot.hardware=front androidboot.selinux=permissive
+# Kernel
+TARGET_RECOVERY_FSTAB = device/huawei/front/recovery.fstab
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_PAGESIZE := 2048
-TARGET_PREBUILT_KERNEL := device/huawei/front/kernel
+TARGET_KERNEL_CONFIG := front_recovery_defconfig
+TARGET_KERNEL_SOURCE := kernel/huawei/front
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/../../linaro-4.9/bin/
 
 # fix this up by examining /proc/mtd on a running device
 BOARD_BOOTIMAGE_PARTITION_SIZE := 8388608
