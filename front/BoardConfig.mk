@@ -71,3 +71,6 @@ RECOVERY_SDCARD_ON_DATA := true
 TW_CRYPTO_REAL_BLKDEV := "/dev/block/mmcblk0p20"
 TW_CRYPTO_MNT_POINT := "/data"
 TW_CRYPTO_KEY_LOC := "footer"
+
+# No partitioning SD Card
+BOARD_HAS_NO_REAL_SDCARD := true
