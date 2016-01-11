@@ -1,5 +1,5 @@
-# Inherit device configuration
-$(call inherit-product, device/huawei/front/device_front.mk)
+# Necessary to mount a PC
+$(call inherit-product, build/target/product/full.mk)
 
 # Release name
 PRODUCT_RELEASE_NAME := front
