@@ -68,5 +68,6 @@ TW_SDEXT_NO_EXT4 := true
 RECOVERY_SDCARD_ON_DATA := true
 
 # Crypto
-TW_INCLUDE_CRYPTO := true
-TW_INCLUDE_JB_CRYPTO := true
+TW_CRYPTO_REAL_BLKDEV := "/dev/block/mmcblk0p20"
+TW_CRYPTO_MNT_POINT := "/data"
+TW_CRYPTO_KEY_LOC := "footer"
