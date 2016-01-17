@@ -570,7 +570,8 @@
         <string name="restoring">Восстановление</string>
         <string name="format_data_msg">Возможно, придется перезагрузить рекавери, чтоб использовать /data снова</string>
         <string name="format_data_err">Невозможно отформатировать, чтобы удалить шифрование</string>
-        <string name="formating_using">Форматирование {1} использовано {2}…</string>
+        <string name="formatting_using">Formatting {1} using {2}...</string>
+        <string name="formatting_using">Форматирование {1} с использованием {2}…</string>
         <string name="unable_to_wipe">Не удалось очистить {1}</string>
         <string name="remove_all">Удаление всех файлов из '{1}'</string>
         <string name="wiping_data">Очистка данных без очистки /data/media …</string>
