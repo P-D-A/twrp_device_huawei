@@ -28,13 +28,13 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1342177280
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 2302672896
 BOARD_FLASH_BLOCK_SIZE := 4096
 
-BOARD_CUSTOM_BOOTIMG_MK := device/huawei/viva/custombootimg.mk
-
 # File Systems
 TARGET_USERIMAGES_USE_F2FS := true
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_SUPPRESS_SECURE_ERASE := true
+
+BOARD_CUSTOM_BOOTIMG_MK := device/huawei/viva/custombootimg.mk
 
 # Graphics
 TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
@@ -46,6 +46,7 @@ TW_THEME := portrait_mdpi
 
 # USB Mounting
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/class/android_usb/f_mass_storage/lun/file
+TW_MTP_DEVICE := /dev/mtp_usb
 
 # Hardware
 BOARD_HAS_NO_SELECT_BUTTON := true

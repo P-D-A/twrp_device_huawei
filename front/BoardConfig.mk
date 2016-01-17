@@ -46,6 +46,7 @@ TW_THEME := portrait_hdpi
 
 # USB Mounting
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/class/android_usb/f_mass_storage/lun/file
+TW_MTP_DEVICE := /dev/mtp_usb
 
 # Hardware
 BOARD_HAS_NO_SELECT_BUTTON := true
