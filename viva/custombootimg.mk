@@ -7,6 +7,8 @@ $(INSTALLED_RECOVERYIMAGE_TARGET): $(MKBOOTIMG) \
 	cp -f device/huawei/viva/res/OswaldCondensed-Regular.ttf $(PRODUCT_OUT)/recovery/root/twres/fonts/RobotoCondensed-Regular.ttf
 	cp -f device/huawei/viva/res/AnkaCoder-C87-r.ttf $(PRODUCT_OUT)/recovery/root/twres/fonts/DroidSansMono.ttf
 	@echo ----- Creating ramdisk ------
+	chmod 644 $(PRODUCT_OUT)/recovery/root/init.rc
+	chmod 644 $(PRODUCT_OUT)/recovery/root/default.prop
 	(cd $(PRODUCT_OUT)/recovery/root/ && find * | sort | cpio -o -H newc) | gzip -9 > $(recovery_ramdisk)
 	@echo ----- Making recovery image ------
 	$(MKBOOTIMG_BIN) --kernel $(PRODUCT_OUT)/kernel --ramdisk $(recovery_ramdisk) --base $(BOARD_KERNEL_BASE) --pagesize $(BOARD_KERNEL_PAGESIZE) $(BOARD_MKBOOTIMG_ARGS) --output $@
