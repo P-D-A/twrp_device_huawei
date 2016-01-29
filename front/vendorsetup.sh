@@ -21,4 +21,4 @@
 # function: add_lunch_combo generic-eng
 
 add_lunch_combo omni_front-eng
-sh device/huawei/front/res/applypatch.sh
+#sh device/huawei/front/res/applypatch.sh
