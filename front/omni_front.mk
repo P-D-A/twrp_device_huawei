@@ -1,7 +1,3 @@
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/res/ru.xml:recovery/root/twres/languages/ru.xml
-
 # Necessary to mount a PC
 $(call inherit-product, build/target/product/full.mk)
 
