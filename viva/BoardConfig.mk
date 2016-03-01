@@ -37,7 +37,6 @@ BOARD_SUPPRESS_SECURE_ERASE := true
 BOARD_CUSTOM_BOOTIMG_MK := device/huawei/viva/custombootimg.mk
 
 # Graphics
-TARGET_RECOVERY_FORCE_PIXEL_FORMAT := "BGRA_8888"
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_MAX_BRIGHTNESS := 250
 TW_BRIGHTNESS_PATH := /sys/class/backlight/lcd/brightness
