@@ -4,7 +4,7 @@
 /system      ext4   /dev/block/platform/omap/omap_hsmmc.1/by-name/system
 /data        ext4   /dev/block/platform/omap/omap_hsmmc.1/by-name/userdata    length=-16384
 /extSdCard   vfat   /dev/block/mmcblk1p1   /dev/block/mmcblk1                 flags=display="Micro SDcard";storage;wipeingui;removable
-/cust        ext4   /dev/block/platform/omap/omap_hsmmc.1/by-name/cust        flags=display="Cust";backup=1;wipeingui;usermrf
+/cust        ext4   /dev/block/platform/omap/omap_hsmmc.1/by-name/cust        flags=display="Cust";backup=1;wipeingui
 /misc        emmc   /dev/block/platform/omap/omap_hsmmc.1/by-name/misc
 /boot        emmc   /dev/block/platform/omap/omap_hsmmc.1/by-name/boot
 /recovery    emmc   /dev/block/platform/omap/omap_hsmmc.1/by-name/recovery
