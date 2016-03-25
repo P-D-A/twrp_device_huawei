@@ -20,6 +20,7 @@ BOARD_KERNEL_PAGESIZE := 2048
 TARGET_KERNEL_CONFIG := front_recovery_defconfig
 TARGET_KERNEL_SOURCE := kernel/huawei/front
 KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/../../linaro-4.9/bin/
+BOARD_KERNEL_CMDLINE += androidboot.hardware=viva
 
 # fix this up by examining /proc/mtd on a running device
 BOARD_BOOTIMAGE_PARTITION_SIZE := 8388608
