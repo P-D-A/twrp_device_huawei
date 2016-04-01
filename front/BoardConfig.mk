@@ -19,7 +19,8 @@ BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_PAGESIZE := 2048
 TARGET_KERNEL_CONFIG := front_recovery_defconfig
 TARGET_KERNEL_SOURCE := kernel/huawei/front
-KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/../../linaro-4.9/bin/
+# GCC 5.2 sources: https://github.com/arter97/arm-linux-androideabi-5.2.git
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/../../arm-linux-androideabi-5.2/bin/
 BOARD_KERNEL_CMDLINE += androidboot.hardware=front
 
 # fix this up by examining /proc/mtd on a running device
