@@ -78,6 +78,7 @@
         <string name="file">Файлы:</string>
         <string name="zip_sig_chk">Проверка подписи ZIP архива</string>
         <string name="inject_twrp_chk">Загрузить TWRP после установки</string>
+        <string name="install_reboot_chk">Перезагрузка после завершения установки</string>
         <string name="options_hdr">Настройки</string>
         <string name="confirm_flash_hdr">Подтвердить установку</string>
         <string name="zip_queue">Очередь:</string>
@@ -661,6 +662,7 @@
         <string name="change_fs_err">Ошибка выбора файловой системы</string>
         <string name="theme_ver_err">Версия применяемой темы не соответствует версии рекавери. Будет использована встроенная тема</string>
         <string name="up_a_level">(на уровень выше)</string>
+        <string name="install_reboot">Перезагрузка через 5 секунд</string>
         <string name="invalid_partsd_del">_ХЗ_ЧТО_ТАКОЕ_</string>
     </resources>
 </language>
