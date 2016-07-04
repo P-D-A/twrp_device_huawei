@@ -281,7 +281,7 @@
         <string name="sys_rol2">TWRP не сможет предотвратить замену себя на стоковых прошивках и не сможет открыть полный ROOT доступ</string>
         <string name="sys_rol3">При установке ZIP архивов или других операциях через ADB возможно изменение системного раздела</string>
         <string name="sys_ro_never_show_chk">Больше не показывать это сообщение во время загрузки</string>
-        <string name="sys_ro_keep_ro_btn">Оставаться в режиме чтения</string>
+        <string name="sys_ro_keep_ro_btn">Только для чтения</string>
         <string name="swipe_allow_mod">Выполнить</string>
         <string name="swipe_allow_mod_s">   Применение модификаций</string>
         <string name="settings_hdr">Настройки</string>
@@ -574,7 +574,7 @@
         <string name="unable_to_wipe">Не удалось очистить {1}</string>
         <string name="cannot_wipe">Раздел {1} невозможно очистить</string>
         <string name="remove_all">Удаление всех файлов из '{1}'</string>
-        <string name="wiping_data">Очистка данных без очистки /data/media …</string>
+        <string name="wiping_data">Очистка данных без очистки /data/media…</string>
         <string name="backing_up">Сохранение {1}…</string>
         <string name="backing">Сохранение</string>
         <string name="backup_size">Размер файла копии '{1}' нулевой</string>
